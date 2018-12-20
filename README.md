@@ -1,3 +1,0 @@
-####该项目为qtalk 组件库
-因为Pod source时候默认都只是在master分支，所以master分支为我们的组件开发分支
-opensource为开源分支，开源时候务必将所有组件库的git地址替换为github地址
