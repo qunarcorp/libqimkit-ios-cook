@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = "QIM Public OpenSSL is an SSL/TLS and Crypto toolkit."
   s.homepage     = "https://im.qunar.com"
   s.license      = "Copyright 2018 im.qunar.com"
-  s.source       = { :git => "", :tag => "#{s.version}"}
+  s.source       = { :git => "https://github.com/qunarcorp/libqimopenssl-ios.git", :tag => "#{s.version}"}
 
   s.author        = { "Qunar IM" => "qtalk@qunar.com" }
 
