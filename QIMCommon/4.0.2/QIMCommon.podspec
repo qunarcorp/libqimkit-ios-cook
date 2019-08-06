@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "Copyright 2018 im.qunar.com"
   s.author        = { "Qunar IM" => "qtalk@qunar.com" }
 
-  s.source       = { :git => "http://github.corp.qunar.com/qtalk/libQIMCommon-iOS.git", :tag=> s.version.to_s}
+  s.source       = { :git => "https://github.com/qunarcorp/libQIMCommon-iOS.git", :tag=> s.version.to_s}
 
   s.ios.deployment_target   = '9.0'
   s.resource_bundles = {'QIMCommonResource' => ['QIMCommon/QIMKitCommonResource/*.{png,aac,caf,pem,wav}']}
