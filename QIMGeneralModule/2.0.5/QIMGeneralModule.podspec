@@ -72,7 +72,6 @@ Pod::Spec.new do |s|
   else
 
     puts '线上release QIMGeneralModule依赖第三方库'
-      s.dependency 'QIMCommon'
       s.dependency 'QIMOpenSSL'
       s.dependency 'QIMKitVendor'
       s.dependency 'QIMCommonCategories'
