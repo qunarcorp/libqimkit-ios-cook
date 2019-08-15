@@ -159,7 +159,6 @@ Pod::Spec.new do |s|
 else
 
   puts '线上release QIMUIKit'
-  s.dependency 'QIMCommon', '~> 2.0'
   s.dependency 'QIMGeneralModule'
 end
 
