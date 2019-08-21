@@ -45,7 +45,8 @@ Pod::Spec.new do |s|
       base.pod_target_xcconfig = {"HEADER_SEARCH_PATHS" => "\"${PODS_ROOT}/Headers/Private/**\" \"${PODS_ROOT}/Headers/Private/QIMCommon/**\" \"${PODS_ROOT}/Headers/Public/QIMCommon/**\" \"${PODS_ROOT}/Headers/Public/QIMCommon/**\""}
     end
   end
-  
+  s.requires_arc = false
+  s.requires_arc = ['QIMCommon/Source/**/*', "QIMCommon/QIMKit/**/*.{h,m,c}"]
   if $debug
     puts 'debug QIMPubCommon依赖第三方库'
     s.dependency 'QIMOpenSSL'
