@@ -102,6 +102,11 @@ Pod::Spec.new do |s|
     rn.pod_target_xcconfig = {"HEADER_SEARCH_PATHS" => "\"${PODS_ROOT}/Headers/Private/**\" \"${PODS_ROOT}/Headers/Public/QIMRNKit/**\" \"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/../node_modules\" \"$(PODS_ROOT)/../node_modules/react-native/ReactCommon/yoga\""}
     rn.resource = 'QIMRNKit/QIMRNKit.bundle'
     rn.frameworks = 'UIKit', 'Foundation'
+    if $debug
+
+     else
+        rn.dependency 'QIMReactNativeLibrary', '~> 4.0'
+     end
   end
   
   s.subspec 'QIMUIKit-NORN' do |norn|
