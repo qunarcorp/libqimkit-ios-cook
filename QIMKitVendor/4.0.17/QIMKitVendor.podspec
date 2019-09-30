@@ -92,27 +92,27 @@ Pod::Spec.new do |s|
       des.dependency 'QIMKitVendor/PublicRedefineHeader'
   end
   
-  s.subspec 'ASI' do |asi|
-    asi.requires_arc = false;
-    asi.dependency 'Reachability'
-    asi.source_files = ['QIMKitVendor/QIMASI/**/*.{h,m,c}']
-    asi.frameworks = 'MobileCoreServices', 'CFNetwork', 'CoreGraphics', 'SystemConfiguration', 'CoreServices'
-    asi.libraries = 'z.1', 'xml2.2'
-    asi.xcconfig = {
-      'HEADER_SEARCH_PATHS': "$(SDKROOT)/usr/include/libxml2"
-    }
-  end
+  #s.subspec 'ASI' do |asi|
+  #  asi.requires_arc = false;
+  #  asi.dependency 'Reachability'
+  #  asi.source_files = ['QIMKitVendor/QIMASI/**/*.{h,m,c}']
+  #  asi.frameworks = 'MobileCoreServices', 'CFNetwork', 'CoreGraphics', 'SystemConfiguration', 'CoreServices'
+  #  asi.libraries = 'z.1', 'xml2.2'
+  #  asi.xcconfig = {
+  #    'HEADER_SEARCH_PATHS': "$(SDKROOT)/usr/include/libxml2"
+  #  }
+  #end
   
-  #s.subspec 'HTTP' do |http|
+  s.subspec 'HTTP' do |http|
       
-   #   http.public_header_files = 'QIMKitVendor/QIMHTTP/**/*.{h}'
-    #  http.source_files = ['QIMKitVendor/QIMHTTP/**/*.{h,m,c}']
-#      http.dependency 'ASIHTTPRequest'
+      http.public_header_files = 'QIMKitVendor/QIMHTTP/**/*.{h}'
+      http.source_files = ['QIMKitVendor/QIMHTTP/**/*.{h,m,c}']
+      http.dependency 'ASIHTTPRequest'
      # http.dependency 'QIMKitVendor/ASI'
-     # http.dependency 'QIMKitVendor/JSON'
-     # http.dependency 'QIMKitVendor/DOG'
-     # http.dependency 'QIMKitVendor/PublicRedefineHeader'      
-#  end
+      http.dependency 'QIMKitVendor/JSON'
+      http.dependency 'QIMKitVendor/DOG'
+      http.dependency 'QIMKitVendor/PublicRedefineHeader'      
+  end
 
   s.subspec 'GCD' do |gcd|
     
