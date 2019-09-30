@@ -103,16 +103,16 @@ Pod::Spec.new do |s|
     }
   end
   
-  s.subspec 'HTTP' do |http|
+  #s.subspec 'HTTP' do |http|
       
-      http.public_header_files = 'QIMKitVendor/QIMHTTP/**/*.{h}'
-      http.source_files = ['QIMKitVendor/QIMHTTP/**/*.{h,m,c}']
+   #   http.public_header_files = 'QIMKitVendor/QIMHTTP/**/*.{h}'
+    #  http.source_files = ['QIMKitVendor/QIMHTTP/**/*.{h,m,c}']
 #      http.dependency 'ASIHTTPRequest'
-      http.dependency 'QIMKitVendor/ASI'
-      http.dependency 'QIMKitVendor/JSON'
-      http.dependency 'QIMKitVendor/DOG'
-      http.dependency 'QIMKitVendor/PublicRedefineHeader'      
-  end
+     # http.dependency 'QIMKitVendor/ASI'
+     # http.dependency 'QIMKitVendor/JSON'
+     # http.dependency 'QIMKitVendor/DOG'
+     # http.dependency 'QIMKitVendor/PublicRedefineHeader'      
+#  end
 
   s.subspec 'GCD' do |gcd|
     
